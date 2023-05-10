@@ -83,14 +83,15 @@ body {
                     padding: 12px;
                     width: 140px;
                     cursor: pointer;
-
-                    :hover {
-                        transform: scale(1.1);
-                    }
+                    transition: transform 0.5s ease-in-out;
 
                     @media screen and (max-width: 280px) {
                         width: 40vw;
                     }
+                }
+
+                button:hover {
+                    transform: scale(1.1);
                 }
             }
         }
