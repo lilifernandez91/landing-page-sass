@@ -52,6 +52,7 @@ body {
         padding: $padding-section;
 
         article {
+            padding-top: 40px;
 
             @media screen and (min-width: 768px) {
                 @include flexCenter (row, space-evenly, center);
@@ -80,7 +81,7 @@ body {
                     border: none;
                     border-radius: 30px;
                     padding: 12px;
-                    width: 28vw;
+                    width: 140px;
                     cursor: pointer;
 
                     :hover {
@@ -97,6 +98,7 @@ body {
         section {
 
             .healtcare {
+                padding-top: 40px;
 
                 h2 {
                     color: $primary-text-color;
@@ -114,6 +116,7 @@ body {
                         padding: 16px;
                         border-radius: $border-radius;
                         height: 350px;
+                        width: 170px;
                         transition: transform 0.5s ease-in-out;
 
                         .icon {
@@ -152,81 +155,90 @@ body {
                 color: $primary-text-color;
             }
 
-            .mission-section {
-                color: $primary-text-color;
-                @include flexCenter (row, space-between, center);
+            .about-us {
+                padding-top: 40px;
 
-                img {
-                    width: 100px;
+                .mission-section {
+                    color: $primary-text-color;
+                    @include flexCenter (row, space-between, center);
 
-                    @media screen and (min-width: 768px) {
-                        width: 150px;
-                    }
-                }
-
-                .earth {
-                    @include flexCenter (column, center, center);
-                    color: $quaternary-color;
-
-                    p {
-                        text-align: $text-center;
+                    img {
+                        width: 100px;
 
                         @media screen and (min-width: 768px) {
-                            width: 45vw;
+                            width: 150px;
                         }
                     }
-                }
 
-                .innovation {
-                    @extend .earth;
+                    .earth {
+                        @include flexCenter (column, center, center);
+                        color: $quaternary-color;
+
+                        p {
+                            text-align: $text-center;
+
+                            @media screen and (min-width: 768px) {
+                                width: 45vw;
+                            }
+                        }
+                    }
+
+                    .innovation {
+                        @extend .earth;
+                    }
                 }
             }
 
-            .gallery-images {
-                @include flexCenter (row, space-between, center);
-                gap: 16px;
-                overflow: scroll;
-                transition: transform 0.5s ease-in-out;
+            .gallery {
+                padding-top: 40px;
 
-                @media screen and (min-width: 1280px) {
-                    @include flexCenter (row, space-evenly, center);
-                }
+                .gallery-images {
+                    @include flexCenter (row, space-between, center);
+                    gap: 16px;
+                    overflow: scroll;
+                    transition: transform 0.5s ease-in-out;
 
-                img:hover {
-                    transform: scale(1.1);
+                    @media screen and (min-width: 1280px) {
+                        @include flexCenter (row, space-evenly, center);
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
 
             .location {
+                padding-top: 40px;
+                padding-bottom: 40px;
 
                 .map {
                     img {
                         width: 100%;
                         height: auto;
                     }
+                }
 
-                    h3,
-                    p {
-                        color: $quaternary-color;
-                    }
+                h3,
+                p {
+                    color: $quaternary-color;
                 }
             }
-
         }
+    }
 
-        footer {
-            background-color: $quaternary-color;
-            color: white;
-            padding: $padding-section;
+    footer {
+        background-color: $quaternary-color;
+        color: white;
+        padding: $padding-section;
 
-            .social-media {
-                @include flexCenter (row, center, center);
-                gap: 16px;
-                padding-bottom: 16px;
+        .social-media {
+            @include flexCenter (row, center, center);
+            gap: 16px;
+            padding-bottom: 16px;
 
-                img {
-                    width: 32px;
-                }
+            img {
+                width: 32px;
             }
         }
     }

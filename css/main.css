@@ -28,6 +28,9 @@ body nav :hover {
 body main {
   padding: 8px;
 }
+body main article {
+  padding-top: 40px;
+}
 @media screen and (min-width: 768px) {
   body main article {
     display: flex;
@@ -62,7 +65,7 @@ body main article .impact-section button {
   border: none;
   border-radius: 30px;
   padding: 12px;
-  width: 28vw;
+  width: 140px;
   cursor: pointer;
 }
 body main article .impact-section button :hover {
@@ -72,6 +75,9 @@ body main article .impact-section button :hover {
   body main article .impact-section button {
     width: 40vw;
   }
+}
+body main section .healtcare, body main section .furniture {
+  padding-top: 40px;
 }
 body main section .healtcare h2, body main section .furniture h2 {
   color: #7C6A0A;
@@ -91,6 +97,7 @@ body main section .healtcare .card-section .product-card, body main section .fur
   padding: 16px;
   border-radius: 16px;
   height: 350px;
+  width: 170px;
   transition: transform 0.5s ease-in-out;
 }
 body main section .healtcare .card-section .product-card .icon, body main section .furniture .card-section .product-card .icon {
@@ -111,37 +118,43 @@ body main section .furniture .card-section .product-card {
 body main .info-section h2 {
   color: #7C6A0A;
 }
-body main .info-section .mission-section {
+body main .info-section .about-us {
+  padding-top: 40px;
+}
+body main .info-section .about-us .mission-section {
   color: #7C6A0A;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body main .info-section .mission-section img {
+body main .info-section .about-us .mission-section img {
   width: 100px;
 }
 @media screen and (min-width: 768px) {
-  body main .info-section .mission-section img {
+  body main .info-section .about-us .mission-section img {
     width: 150px;
   }
 }
-body main .info-section .mission-section .earth, body main .info-section .mission-section .innovation {
+body main .info-section .about-us .mission-section .earth, body main .info-section .about-us .mission-section .innovation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #FA9500;
 }
-body main .info-section .mission-section .earth p, body main .info-section .mission-section .innovation p {
+body main .info-section .about-us .mission-section .earth p, body main .info-section .about-us .mission-section .innovation p {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  body main .info-section .mission-section .earth p, body main .info-section .mission-section .innovation p {
+  body main .info-section .about-us .mission-section .earth p, body main .info-section .about-us .mission-section .innovation p {
     width: 45vw;
   }
 }
-body main .info-section .gallery-images {
+body main .info-section .gallery {
+  padding-top: 40px;
+}
+body main .info-section .gallery .gallery-images {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -151,30 +164,34 @@ body main .info-section .gallery-images {
   transition: transform 0.5s ease-in-out;
 }
 @media screen and (min-width: 1280px) {
-  body main .info-section .gallery-images {
+  body main .info-section .gallery .gallery-images {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
 }
-body main .info-section .gallery-images img:hover {
+body main .info-section .gallery .gallery-images img:hover {
   transform: scale(1.1);
+}
+body main .info-section .location {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 body main .info-section .location .map img {
   width: 100%;
   height: auto;
 }
-body main .info-section .location .map h3,
-body main .info-section .location .map p {
+body main .info-section .location h3,
+body main .info-section .location p {
   color: #FA9500;
 }
-body main footer {
+body footer {
   background-color: #FA9500;
   color: white;
   padding: 8px;
 }
-body main footer .social-media {
+body footer .social-media {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,6 +199,6 @@ body main footer .social-media {
   gap: 16px;
   padding-bottom: 16px;
 }
-body main footer .social-media img {
+body footer .social-media img {
   width: 32px;
 }/*# sourceMappingURL=main.css.map */
